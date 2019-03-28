@@ -1,0 +1,130 @@
+.center {
+	text-align: center;
+}
+
+body {
+    background: #000000 url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container {
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+    background-color: #eee;
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+
+.content {
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    text-align: center;
+    padding-top: 1.1em
+}
+
+#title,
+.content {
+    padding-bottom: 1.1em
+}
+
+/* Logo */
+#logo {
+	display: inline-block;
+	padding: 1em 0;
+	width: 100%;
+	background: -webkit-linear-gradient(#8a2fdc -50%, #eee);
+    background: -o-linear-gradient(#8a2fdc -50%, #eee);
+    background: -ms-linear-gradient(#8a2fdc -50%, #eee);
+    background: -moz-linear-gradient(#8a2fdc -50%, #eee);
+    background: linear-gradient(#8a2fdc -50%, #eee);
+}
+
+#logo img {
+    width: 100px;
+}
+
+#logo h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+}
+
+/* Navigation */
+#main-nav {
+	text-align: center;
+	background: #eeeeee;
+}
+
+#main-nav ul li {
+	padding: 10px 15px 10px 15px;
+	display: inline-block;
+	font-family: sans-serif;
+}
+
+#main-nav ul li a {
+  color: #262626;
+	text-decoration: none;
+}
+
+#main-nav ul li a:hover {
+  color: grey;
+	text-decoration: underline;
+}
+
+#source-log tr td {
+    border: 1px solid black;
+}
+
+#sitemap {
+    margin: 10px;
+    width: 100%;
+}
+
+#contribute input:focus {
+    border: 1px solid red;
+}
+
+#textbox {
+    width: 200px;
+}
+
+/* Dropotron */
+.dropotron {
+    background-color: #eee;
+    border-radius: 5px;
+    color: #fff;
+    min-width: 10em;
+    padding: 1em 0;
+    box-shadow: 0 1em 1em 0 rgba(0, 0, 0, .5)
+}
+
+.dropotron>li {
+    line-height: 2em;
+    padding: 0 1.1em 0 1em
+}
+
+.dropotron>li>a {
+    color: #000;
+    border: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.dropotron>li.active>a,
+.dropotron>li:hover>a {
+    color: #fff
+}
+
+.dropotron.level-0 {
+    border-radius: 0 0 5px 5px;
+    font-size: .9em;
+    padding-top: 0;
+    margin-top: -1px
+}

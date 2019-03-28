@@ -4,10 +4,10 @@
     <!-- Compatibility Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title>System Overload Memories</title>
+    <title>System Overload Pixelmon Server</title>
 
     <!-- Google Tags -->
     <meta name="description" content="A website about the System Overload Pixelmon server back in 2016">
@@ -21,6 +21,9 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -30,42 +33,63 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script>
+        $(function() {
+            $('#main-nav > ul').dropotron();
+        });
+    </script>
 </head>
 <body>
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-        <!-- Wrapper -->
-        <div id="wrapper">
+        <!-- Header -->
+        <div id="header">
 
-            <!-- Header -->
-            <div id="header">
-
-                <!-- Logo -->
+            <!-- Logo -->
+            <div class="center">
                 <div id="logo">
-                    <a href="index.html">System Overload Memories</a>
+                    <img src="assets/img/logo.png" alt="Logo">
+                    <h1>System Overload Pixelmon Server</h1>
                 </div>
+            </div>
 
-                <!-- Navigation -->
-                <nav id="nav">
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="#">Members</a>
-                            <ul>
-                                <li><a href="people/risha.html">Risha</a></li>
-                                <li><a href="people/tailstar.html">Tailstar &amp; Blu</a></li>
-                                <li><a href="people/mystery.html">Mystery</a></li>
-                                <li><a href="people/cen.html">Cen</a></li>
-                                <li><a href="people/caddy.html">Caddy</a></li>
-                                <li><a href="people/others.html">Others</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="screenshots.html">Old Screenshots</a></li>
-                        <li><a href="trailers.html">Trailers</a></li>
-                        <li><a href="external.html">External Links</a></li>
-                        <li><a href="contribute.html">Contribute!</a></li>
-                    </ul>
-                </nav>
+            <!-- Navigation -->
+            <nav id="main-nav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#">Members</a>
+                        <ul>
+                            <li><a href="people/risha.html">Risha</a></li>
+                            <li><a href="people/tailstar.html">Tailstar &amp;amp; Blu</a></li>
+                            <li><a href="people/mystery.html">Mystery</a></li>
+                            <li><a href="people/cen.html">Cen</a></li>
+                            <li><a href="people/caddy.html">Caddy</a></li>
+                            <li><a href="people/others.html">Others</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="screenshots.html">Old Screenshots</a></li>
+                    <li><a href="trailers.html">Trailers</a></li>
+                    <li><a href="external.html">External Links</a></li>
+                    <li><a href="contribute.html">Contribute!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Container -->
+        <div id="container">
+            <header id="title">
+                <i class="fas fa-home"></i>
+                <h1>Home</h1>
+            </header>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
     </div>
