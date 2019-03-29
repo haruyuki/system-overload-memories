@@ -1,13 +1,11 @@
-.center {
-	text-align: center;
-}
+/* ----- Site-wide settings ----- */
 
 body {
-    background: #000000 url(../img/bg.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: #000 url(../img/bg.png) center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 #container {
@@ -21,21 +19,38 @@ body {
     border-radius: 5px;
 }
 
+.center {
+    text-align: center;
+}
+
 .content {
     font-family: 'Roboto', sans-serif;
+    margin: 0 10px 0 10px;
 }
+
+.bold {
+    font-weight: 800;
+}
+
+.fas {
+    font-size: 2em;
+    color: #8a2fdc;
+}
+
+/* ----- Heading Icon ----- */
 
 #title {
     text-align: center;
-    padding-top: 1.1em
+    padding-top: 1.1em;
 }
 
-#title,
-.content {
-    padding-bottom: 1.1em
+#title, .content {
+    padding-bottom: 1.1em;
 }
 
-/* Logo */
+
+/* ----- Heading Logo ----- */
+
 #logo {
 	display: inline-block;
 	padding: 1em 0;
@@ -56,7 +71,8 @@ body {
 	font-size: 2em;
 }
 
-/* Navigation */
+/* ----- Navigation ----- */
+
 #main-nav {
 	text-align: center;
 	background: #eeeeee;
@@ -74,40 +90,66 @@ body {
 }
 
 #main-nav ul li a:hover {
-  color: grey;
-	text-decoration: underline;
+  color: #808080;
+  text-decoration: underline;
 }
 
-#source-log tr td {
+/* ----- source-log.html ----- */
+
+#source-log table {
+    width: 100%;
+}
+
+#source-log table tr td {
+    padding: 10px;
     border: 1px solid black;
 }
 
-#sitemap {
+/* ----- site-map.html ----- */
+
+#site-map {
     margin: 10px;
     width: 100%;
+    line-height: 1.5;
 }
+
+#site-map a {
+    color: rgb(0, 0, 238);
+    text-decoration: none;
+}
+
+#site-map a:hover {
+    text-decoration: underline;
+}
+
+#site-map span {
+    font-size: 1.1em;
+}
+
+/* ----- contribute.html ----- */
 
 #contribute input:focus {
     border: 1px solid red;
 }
 
-#textbox {
+#text-box {
     width: 200px;
 }
 
-/* Dropotron */
+/* ----- Dropotron ----- */
+
 .dropotron {
     background-color: #eee;
     border-radius: 5px;
     color: #fff;
     min-width: 10em;
     padding: 1em 0;
-    box-shadow: 0 1em 1em 0 rgba(0, 0, 0, .5)
+    box-shadow: 0 1em 1em 0 rgba(0, 0, 0, .5);
 }
 
 .dropotron>li {
     line-height: 2em;
-    padding: 0 1.1em 0 1em
+    padding: 0 1.1em 0 1em;
 }
 
 .dropotron>li>a {
@@ -117,14 +159,48 @@ body {
     text-decoration: none;
 }
 
-.dropotron>li.active>a,
-.dropotron>li:hover>a {
-    color: #fff
+.dropotron>li.active>a, .dropotron>li:hover>a {
+    color: #fff;
 }
 
 .dropotron.level-0 {
     border-radius: 0 0 5px 5px;
     font-size: .9em;
     padding-top: 0;
-    margin-top: -1px
+    margin-top: -1px;
+}
+
+/* Large Devices, Wide Screens */
+
+@media screen and (max-width:1280px) {
+
+    #container {
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+    }
+}
+
+/* Medium Devices, Desktops */
+
+@media screen and (max-width:960px) {
+
+    #container {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media screen and (max-width:768px) {
+
+    #logo img {
+        width: 80px;
+    }
+
+    #container {
+        margin-left: 2em;
+        margin-right: 2em
+    }
+
 }
