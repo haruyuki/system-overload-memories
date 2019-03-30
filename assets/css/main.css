@@ -136,6 +136,11 @@ body {
     border: 1px solid black;
 }
 
+#source-log a {
+    text-decoration: none;
+    color: rgb(0, 0, 238);
+}
+
 /* ----- site-map.html ----- */
 
 #site-map {
