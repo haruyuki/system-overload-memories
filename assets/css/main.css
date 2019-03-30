@@ -24,7 +24,8 @@ body {
 }
 
 .content {
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.2em;
+    font-family: 'Open Sans', sans-serif;
     margin: 0 10px 0 10px;
 }
 
@@ -33,7 +34,7 @@ body {
 }
 
 .fas {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #8a2fdc;
 }
 
@@ -44,7 +45,8 @@ body {
     padding-top: 1.1em;
 }
 
-#title, .content {
+#title,
+.content {
     padding-bottom: 1.1em;
 }
 
@@ -74,24 +76,53 @@ body {
 /* ----- Navigation ----- */
 
 #main-nav {
-	text-align: center;
+    text-align: center;
 	background: #eeeeee;
 }
 
 #main-nav ul li {
-	padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    position: relative;
+    padding: 5px 15px;
+    margin-bottom: 10px;
 	display: inline-block;
 	font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
 }
 
 #main-nav ul li a {
-  color: #262626;
+    color: #262626;
 	text-decoration: none;
 }
 
 #main-nav ul li a:hover {
-  color: #808080;
-  text-decoration: underline;
+  color: white;
+}
+
+#main-nav > ul > li.current {
+    font-weight: bold;
+}
+
+#main-nav:after,
+#main-nav > ul > li.current:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .75em;
+    background-color: #800080;
+}
+
+#main-nav > ul > li.current:before {
+    -moz-transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    width: .75em;
+    position: absolute;
+    bottom: -1.1em;
+    left: 50%;
+    margin-left: -.375em;
 }
 
 /* ----- source-log.html ----- */
@@ -129,7 +160,13 @@ body {
 /* ----- contribute.html ----- */
 
 #contribute input:focus {
-    border: 1px solid red;
+    border: 1px solid #9370db;
+}
+
+#contribute textarea {
+    resize: none;
+    width: 200px;
+    height: 100px;
 }
 
 #text-box {
@@ -147,19 +184,20 @@ body {
     box-shadow: 0 1em 1em 0 rgba(0, 0, 0, .5);
 }
 
-.dropotron>li {
+.dropotron > li {
     line-height: 2em;
     padding: 0 1.1em 0 1em;
 }
 
-.dropotron>li>a {
+.dropotron > li > a {
     color: #000;
     border: 0;
     font-family: sans-serif;
     text-decoration: none;
 }
 
-.dropotron>li.active>a, .dropotron>li:hover>a {
+.dropotron>li.active>a,
+.dropotron>li:hover>a {
     color: #fff;
 }
 
@@ -167,7 +205,6 @@ body {
     border-radius: 0 0 5px 5px;
     font-size: .9em;
     padding-top: 0;
-    margin-top: -1px;
 }
 
 /* Large Devices, Wide Screens */
