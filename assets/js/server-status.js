@@ -1,6 +1,7 @@
-$.getJSON("https://api.mcsrvstat.us/2/sopixelmon.com", function(server) {
+$.getJSON("https://api.mcsrvstat.us/2/arcadiaeco.us.to", function(server) {
 	// To test other functionalities of this function replace link above with
 	// https://api.mcsrvstat.us/2/arcadiaeco.us.to
+    // https://api.mcsrvstat.us/2/play.rexkraft.com
 	var online = document.getElementById("online");
 	var version = document.getElementById("version");
 	var players = document.getElementById("players");

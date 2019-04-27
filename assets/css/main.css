@@ -154,14 +154,14 @@ body {
     border-radius: 5px;
     background-color: #fff;
     padding: 0.5em;
-    padding-right:100px;
+    width: 350px;
 }
 
 .label {
     text-align: right;
     float: left;
     margin-right: 1em;
-    min-width: 8em;
+    min-width: 10em;
     color: #444;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
     background-color:  #999;
@@ -179,11 +179,11 @@ body {
 
  /* ----- screenshots.html ----- */
 
-*.unselectable {
-   -moz-user-select: -moz-none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+*.no-highlight {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #screenshots-list {
@@ -191,12 +191,20 @@ body {
    padding-bottom: 50px;
 }
 
+.screenshot-1x {
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: 98%;
+    display: inline-block;
+}
+
 .screenshot-3x {
     margin: 5px;
     padding: 5px;
     height: auto;
     width: 31%;
-    float: left;
+    display: inline-block;
 }
 
 .screenshot-2x {
@@ -204,7 +212,12 @@ body {
     padding: 5px;
     height: auto;
     width: 48%;
-    float: left;
+    display: inline-block;
+}
+
+.screenshot-1x img {
+    width: 100%;
+    border-radius: 5px
 }
 
 .screenshot-3x img {
