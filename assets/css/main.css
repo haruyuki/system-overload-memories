@@ -125,6 +125,98 @@ body {
     margin-left: -.375em;
 }
 
+/* ----- Sidebar ----- */
+
+.tokubetsu {
+	float: left;
+	width: 65%;
+}
+
+#sidebar {
+	float: right;
+	width: auto;
+	padding: 10px;
+}
+
+ /* ----- index.html ----- */
+
+.section-title {
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	padding-bottom: 10px;
+}
+
+.statusbox {
+    float: left;
+	font-family: "Helvetica Neue";
+	font-size: 14px;
+	font-weight: 700;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.5em;
+    padding-right:100px;
+}
+
+.label {
+    text-align: right;
+    float: left;
+    margin-right: 1em;
+    min-width: 8em;
+    color: #444;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-color:  #999;
+    padding: 0.1em;
+    border-radius: 5px;
+    margin-bottom: 0.4em;
+}
+
+.status-content {
+    color: #666;
+    float: left;
+    padding: 0.1em;
+    margin-bottom: 0.4em;
+}
+
+ /* ----- screenshots.html ----- */
+
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#screenshots-list {
+   text-align: center;
+   padding-bottom: 50px;
+}
+
+.screenshot-3x {
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: 31%;
+    float: left;
+}
+
+.screenshot-2x {
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: 48%;
+    float: left;
+}
+
+.screenshot-3x img {
+    width: 100%;
+    border-radius: 5px
+}
+
+.screenshot-2x img {
+    width: 100%;
+    border-radius: 5px
+}
+
 /* ----- source-log.html ----- */
 
 #source-log table {

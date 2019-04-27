@@ -36,6 +36,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/server-status.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script>
         $(function() {
@@ -84,13 +85,33 @@
         <header id="title">
             <i class="fas fa-home"></i>
         </header>
-        <div class="content">
+        <div class="content tokubetsu">
             <p>This website is to introduce any new or existing players about the old Pixelmon Minecraft server, System Overload. Since its start at the end of 2015, it has gone through many names, from the original System Overload to SO II: Horizons and to the current name, netAccess Pixelmon.</p>
             <br>
             <p>The server was created by M1DN1GHTCR33P3R (Risha's name at the time), one of the regular players of a previous Pixelmon server called HeartGold Pixelmon, which shut down due to payment issues. Together with nathaniel513, another regular player of HeartGold Pixelmon, managed to run the server nicely with an average player base of around 4-5 daily.</p>
             <br>
             <p>Over the course of two years before its closing in mid-2017, there have been many amazing builds and content created on the server. On this site, you'll be able to find pictures of some of the amazing builds as well as some information about the current staff members at the time. There is also a page containing external links to still existing or archived sites related to System Overload.</p>
         </div>
+        <div id="sidebar">
+            <h2 class="section-title">Server Status</h2>
+            <div class="statusbox">
+                <span class="label">Online: </span>
+                <span id="online" class="status-content">Loading status...</span>
+                <br>
+                <span class="label">IP: </span>
+                <span id="ip" class="status-content"></span>
+                <br>
+                <span class="label">Version: </span>
+                <span id="version" class="status-content"></span>
+                <br>
+                <span class="label">Players: </span>
+                <span id="players" class="status-content"></span>
+                <br>
+                <span class="label">Online Players: </span>
+                <div id="online-players" class="status-content"><span style="color: #ffffff;">.</span></div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
     </div>
 </div>
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <!-- Compatibility Tags -->
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title>External Links - SO Pixelmon Memories</title>
+    <title>Image Map - SO Pixelmon Memories</title>
 
     <!-- Google Tags -->
     <meta name="description" content="A website about the System Overload Pixelmon server back in 2016">
@@ -34,9 +34,11 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
 
+
     <!-- Scripts -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/imageMapResizer.min.js"></script>
     <script>
         $(function() {
             $('#main-nav > ul').dropotron();
@@ -71,9 +73,9 @@
                         <li><a href="people/caddy.html">Caddy</a></li>
                     </ul>
                 </li>
-                <li><a href="screenshots.html">Old Screenshots</a></li>
+                <li class="current"><a href="screenshots.html">Old Screenshots</a></li>
                 <li><a href="trailers.html">Trailers</a></li>
-                <li class="current"><a href="external.html">External Links</a></li>
+                <li><a href="external.html">External Links</a></li>
                 <li><a href="contribute.html">Contribute</a></li>
             </ul>
         </nav>
@@ -82,18 +84,22 @@
     <!-- Container -->
     <div id="container">
         <header id="title">
-            <i class="fas fa-external-link-alt"></i>
+            <i class="fas fa-heart"></i>
         </header>
-        <div class="content tokubetsu">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="content">
+			<img src="assets/img/image-map/home.png" width="100%" alt="Image Map" usemap="#imagemap" id="ok">
+
+			<map name="imagemap">
+			    <area shape="rect" coords="220,90,380,300" alt="Home" href="index.html">
+			    <area shape="rect" coords="680,70,820,300" alt="Members" href="imagemap-members.html">
+			    <area shape="rect" coords="1070,90,1330,300" alt="Old Screenshots" href="screenshots.html">
+			    <area shape="rect" coords="220,540,380,750" alt="Trailers" href="trailers.html">
+			    <area shape="rect" coords="640,530,860,750" alt="External Links" href="external.html">
+			    <area shape="rect" coords="1120,520,1280,750" alt="Contribute" href="contribute.html">
+        	</map>
         </div>
-        <div id="sidebar">
-            <a class="twitter-timeline" data-lang="en" data-height="500" data-theme="dark" href="https://twitter.com/SOPixelmon?ref_src=twsrc%5Etfw">Tweets by SOPixelmon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        <div style="clear: both"></div>
     </div>
 </div>
+<script>imageMapResize();</script>
 </body>
 </html>
