@@ -177,6 +177,36 @@ body {
     margin-bottom: 0.4em;
 }
 
+.ui-tooltip,.arrow:after {
+  background: #fff;
+}
+
+.arrow {
+  width: 70px;
+  height: 5px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -5px;
+}
+
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: -25px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.player-head {
+  margin: 2px;
+}
+
  /* ----- screenshots.html ----- */
 
 *.no-highlight {
