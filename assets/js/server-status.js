@@ -1,4 +1,4 @@
-$.getJSON("https://api.mcsrvstat.us/2/play.rexkraft.com", function(server) {
+$.getJSON("https://api.mcsrvstat.us/2/sopixelmon.com", function(server) {
 	// To test other functionalities of this function replace link above with either
     // either one of the links below.
 	// https://api.mcsrvstat.us/2/arcadiaeco.us.to
