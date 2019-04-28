@@ -54,10 +54,10 @@ body {
 /* ----- Heading Logo ----- */
 
 #logo {
-	display: inline-block;
-	padding: 1em 0;
-	width: 100%;
-	background: -webkit-linear-gradient(#8a2fdc -50%, #eee);
+    display: inline-block;
+    padding: 1em 0;
+    width: 100%;
+    background: -webkit-linear-gradient(#8a2fdc -50%, #eee);
     background: -o-linear-gradient(#8a2fdc -50%, #eee);
     background: -ms-linear-gradient(#8a2fdc -50%, #eee);
     background: -moz-linear-gradient(#8a2fdc -50%, #eee);
@@ -69,15 +69,15 @@ body {
 }
 
 #logo h1 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
 }
 
 /* ----- Navigation ----- */
 
 #main-nav {
     text-align: center;
-	background: #eeeeee;
+    background: #eeeeee;
 }
 
 #main-nav ul li {
@@ -85,15 +85,15 @@ body {
     position: relative;
     padding: 5px 15px;
     margin-bottom: 10px;
-	display: inline-block;
-	font-family: sans-serif;
+    display: inline-block;
+    font-family: sans-serif;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
 }
 
 #main-nav ul li a {
     color: #262626;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #main-nav ul li a:hover {
@@ -128,29 +128,29 @@ body {
 /* ----- Sidebar ----- */
 
 .tokubetsu {
-	float: left;
-	width: 65%;
+    float: left;
+    width: 65%;
 }
 
 #sidebar {
-	float: right;
-	width: auto;
-	padding: 10px;
+    float: right;
+    width: auto;
+    padding: 10px;
 }
 
  /* ----- index.html ----- */
 
 .section-title {
-	text-align: center;
-	font-family: "Open Sans", sans-serif;
-	padding-bottom: 10px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 10px;
 }
 
 .statusbox {
     float: left;
-	font-family: "Helvetica Neue";
-	font-size: 14px;
-	font-weight: 700;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 700;
     border-radius: 5px;
     background-color: #fff;
     padding: 0.5em;
@@ -219,6 +219,12 @@ body {
 #screenshots-list {
    text-align: center;
    padding-bottom: 50px;
+}
+
+#screenshots-list h1 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
 }
 
 .screenshot-1x {
