@@ -89,8 +89,8 @@
             <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <ul>
-                <li><button onclick="includeHTML('chatlogs/2016-08-28.htm')">2016-08-28</button></li>
-                <li><button onclick="includeHTML('chatlogs/2016-08-31.htm')">2016-08-31</button></li>
+                <li><button onclick="$('#chat-log').load('chatlogs/2016-08-28.htm')">2016-08-28</button></li>
+                <li><button onclick="$('#chat-log').load('chatlogs/2016-08-31.htm')">2016-08-31</button></li>
                 <li>2016-09-04</li>
                 <li>2016-09-06</li>
                 <li>2016-09-07</li>
@@ -110,27 +110,5 @@
         </div>
     </div>
 </div>
-<script>
-function includeHTML(file) {
-    console.log(file)
-    location = document.getElementById("chat-log");
-    console.log(location)
-
-    /* Make an HTTP request using the attribute value as the file name: */
-    if (file) {
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {location.innerHTML = this.responseText;}
-                if (this.status == 404) {location.innerHTML = "Page not found.";}
-            }
-        } 
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
-    }
-}
-</script>
 </body>
 </html>
