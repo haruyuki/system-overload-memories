@@ -89,8 +89,8 @@
             <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <ul>
-                <li><button onclick="includeHTML()">2016-08-28</button></li>
-                <li>2016-08-31</li>
+                <li><button onclick="includeHTML('chatlogs/2016-08-28.htm')">2016-08-28</button></li>
+                <li><button onclick="includeHTML('chatlogs/2016-08-31.htm')">2016-08-31</button></li>
                 <li>2016-09-04</li>
                 <li>2016-09-06</li>
                 <li>2016-09-07</li>
@@ -106,19 +106,19 @@
                 <li>2016-10-06</li>
                 <li>2016-12-30</li>
             </ul>
-            <div w3-include-html="chatlogs/2016-08-28.htm"></div>
+            <div w3-include-html=""></div>
         </div>
     </div>
 </div>
 <script>
-function includeHTML() {
+function includeHTML(location) {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
     /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
+    file = location
     if (file) {
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
