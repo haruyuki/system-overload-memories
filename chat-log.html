@@ -112,7 +112,9 @@
 </div>
 <script>
 function includeHTML(file) {
+    console.log(file)
     location = document.getElementById("chat-log");
+    console.log(location)
 
     /* Make an HTTP request using the attribute value as the file name: */
     xhttp = new XMLHttpRequest();
@@ -122,7 +124,7 @@ function includeHTML(file) {
             if (this.status == 404) {location.innerHTML = "Page not found.";}
         }
     } 
-    xhttp.open("GET", file, true);
+    xhttp.open("GET", location, true);
     xhttp.send();
     /* Exit the function: */
     return;
