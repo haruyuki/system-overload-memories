@@ -120,7 +120,8 @@
 </div>
 <script>
     $(".item").click(function() {
-        $('#chat-log').load($(this).html());
+        const location = 'chatlogs/'.concat($(this).html(), 'htm');
+        $('#chat-log').load(location);
     })
 </script>
 </body>
