@@ -88,27 +88,40 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <style type="text/css">
+                .item {
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    font-size: inherit;
+                }
+            </style>
             <ul>
-                <li><button onclick="$('#chat-log').load('chatlogs/2016-08-28.htm')">2016-08-28</button></li>
-                <li><button onclick="$('#chat-log').load('chatlogs/2016-08-31.htm')">2016-08-31</button></li>
-                <li>2016-09-04</li>
-                <li>2016-09-06</li>
-                <li>2016-09-07</li>
-                <li>2016-09-09</li>
-                <li>2016-09-10</li>
-                <li>2016-09-11</li>
-                <li>2016-09-12</li>
-                <li>2016-09-14</li>
-                <li>2016-09-15</li>
-                <li>2016-09-16</li>
-                <li>2016-09-17</li>
-                <li>2016-10-04</li>
-                <li>2016-10-06</li>
-                <li>2016-12-30</li>
+                <li><button class='item'>2016-08-28</button></li>
+                <li><button class='item'>2016-08-31</button></li>
+                <li><button class='item'>2016-09-04</button></li>
+                <li><button class='item'>2016-09-06</button></li>
+                <li><button class='item'>2016-09-07</button></li>
+                <li><button class='item'>2016-09-09</button></li>
+                <li><button class='item'>2016-09-10</button></li>
+                <li><button class='item'>2016-09-11</button></li>
+                <li><button class='item'>2016-09-12</button></li>
+                <li><button class='item'>2016-09-14</button></li>
+                <li><button class='item'>2016-09-15</button></li>
+                <li><button class='item'>2016-09-16</button></li>
+                <li><button class='item'>2016-09-17</button></li>
+                <li><button class='item'>2016-10-04</button></li>
+                <li><button class='item'>2016-10-06</button></li>
+                <li><button class='item'>2016-12-30</button></li>
             </ul>
             <div id="chat-log"></div>
         </div>
     </div>
 </div>
+<script>
+    $(".item").click(function() {
+        $('#chat-log').load($(this).html());
+    })
+</script>
 </body>
 </html>
