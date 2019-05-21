@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Compatibility Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Reflection - SO Pixelmon Memories</title>
+
+    <!-- Google Tags -->
+    <meta name="description" content="A website about the System Overload Pixelmon server back in 2016">
+    <meta name="keywords" content="system, overload, pixelmon, server, minecraft, website">
+
+    <!-- Apple Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script>
+        $(function() {
+            $('#main-nav > ul').dropotron();
+        });
+    </script>
+</head>
+<body>
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <div id="header">
+
+        <!-- Logo -->
+        <div class="center">
+            <div id="logo">
+                <img src="assets/img/logo.png" alt="Logo">
+                <h1>System Overload Memories</h1>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Members</a>
+                    <ul>
+                        <li><a href="people/risha.html">Risha</a></li>
+                        <li><a href="people/tailstar.html">Tailstar &amp; Blu</a></li>
+                        <li><a href="people/mystery.html">Mystery</a></li>
+                        <li><a href="people/cen.html">Cen</a></li>
+                        <li><a href="people/caddy.html">Caddy</a></li>
+                    </ul>
+                </li>
+                <li><a href="screenshots.html">Old Screenshots</a></li>
+                <li><a href="trailers.html">Trailers</a></li>
+                <li><a href="external.html">External Links</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Container -->
+    <div id="container">
+        <header id="title">
+            <i class="fas fa-comment-alt"></i>
+        </header>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <ul>
+                <li><button onclick="includeHTML()">2016-08-28</button></li>
+                <li>2016-08-31</li>
+                <li>2016-09-04</li>
+                <li>2016-09-06</li>
+                <li>2016-09-07</li>
+                <li>2016-09-09</li>
+                <li>2016-09-10</li>
+                <li>2016-09-11</li>
+                <li>2016-09-12</li>
+                <li>2016-09-14</li>
+                <li>2016-09-15</li>
+                <li>2016-09-16</li>
+                <li>2016-09-17</li>
+                <li>2016-10-04</li>
+                <li>2016-10-06</li>
+                <li>2016-12-30</li>
+            </ul>
+            <div w3-include-html="chatlogs/2016-08-28.htm"></div>
+        </div>
+    </div>
+</div>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+</body>
+</html>
