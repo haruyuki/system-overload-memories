@@ -321,6 +321,31 @@ body {
 
 /* ----- chat-log.html ----- */
 
+#items {
+    text-align: center;
+    background: #eeeeee;
+}
+
+#items ul li {
+    margin-left: 5px;
+    position: relative;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+#items ul li button {
+    color: #262626;
+    text-decoration: none;
+}
+
+.current-item {
+    font-weight: 600;
+}
+
 .item {
     background: none;
     border: none;
@@ -337,6 +362,7 @@ body {
 }
 
 #chat-log span {
+    word-wrap: break-word;
     color: #ffffff;
 }
 
