@@ -319,6 +319,12 @@ body {
     width: 200px;
 }
 
+/* ----- Image Map ----- */
+
+#image-map {
+    width: 100%;
+}
+
 /* ----- chat-log.html ----- */
 
 #items {
