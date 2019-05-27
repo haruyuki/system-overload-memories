@@ -129,7 +129,7 @@ body {
 
 .tokubetsu {
     float: left;
-    width: 65%;
+    width: 52%;
 }
 
 #sidebar {
@@ -247,7 +247,7 @@ body {
     margin: 5px;
     padding: 5px;
     height: auto;
-    width: 48%;
+    width: 47%;
     display: inline-block;
 }
 
@@ -264,6 +264,16 @@ body {
 .screenshot-2x img {
     width: 100%;
     border-radius: 5px
+}
+
+/* ----- trailers.html ----- */
+
+#videos-list {
+    text-align: center;
+}
+
+.video {
+    margin: 10px;
 }
 
 /* ----- source-log.html ----- */
@@ -407,6 +417,9 @@ body {
     padding-top: 0;
 }
 
+
+
+/* ------------------- ALTERNATE CSS ------------------- */
 /* Large Devices, Wide Screens */
 
 @media screen and (max-width:1280px) {
@@ -424,6 +437,14 @@ body {
     #container {
         margin-left: 3em;
         margin-right: 3em;
+    }
+
+    .tokubetsu {
+        width: revert;
+    }
+
+    #sidebar {
+        display: none;
     }
 }
 
@@ -443,6 +464,30 @@ body {
     #container {
         margin-left: 2em;
         margin-right: 2em
+    }
+
+    .screenshot-1x {
+        margin: 5px;
+        padding: 5px;
+        height: auto;
+        width: 98%;
+        display: inline-block;
+    }
+
+    .screenshot-3x {
+        margin: 5px;
+        padding: 5px;
+        height: auto;
+        width: 31%;
+        display: inline-block;
+    }
+
+    .screenshot-2x {
+        margin: 5px;
+        padding: 5px;
+        height: auto;
+        width: 47%;
+        display: inline-block;
     }
 
 }
