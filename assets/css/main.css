@@ -424,7 +424,7 @@ body {
 
 @media screen and (max-width:1280px) {
 
-    #container {
+    #container {  /* Reduce the margin on either side make the container bigger */
         margin-left: 3.5em;
         margin-right: 3.5em;
     }
@@ -434,17 +434,29 @@ body {
 
 @media screen and (max-width:960px) {
 
-    #container {
+    #container {  /* Reduce the margin on either side make the container bigger */
         margin-left: 3em;
         margin-right: 3em;
     }
 
-    .tokubetsu {
+    .tokubetsu {  /* Revert width changes made to fit the Server Status */
         width: revert;
     }
 
-    #sidebar {
+    #sidebar {  /* Hide Server Status on smaller screens */
         display: none;
+    }
+
+    .screenshot-3x {  /* Change the styling to keep it displaying 3 images in a row */
+        margin: 3px;
+        padding: 3px;
+        width: 31%;
+    }
+
+    .screenshot-2x {  /* Change the styling to keep it displaying 2 images in a row */
+        margin: 3px;
+        padding: 3px;
+        width: 47%;
     }
 }
 
@@ -453,41 +465,22 @@ body {
 @media screen and (max-width:768px) {
 
     #main-nav:after,
-    #main-nav > ul > li.current:before {
+    #main-nav > ul > li.current:before {  /* Hide the navigation bar arrow */
         display: none;
     }
 
-    #logo img {
+    #logo img {  /* Reduce the logo size */
         width: 80px;
     }
 
-    #container {
+    #container {  /* Reduce the margin on either side make the container bigger */
         margin-left: 2em;
-        margin-right: 2em
+        margin-right: 2em;
     }
 
-    .screenshot-1x {
-        margin: 5px;
-        padding: 5px;
-        height: auto;
-        width: 98%;
-        display: inline-block;
+    .screenshot-3x, .screenshot-2x { /* Change the styling so images are instead stacked on top of one another */
+        margin: 1px;
+        padding: 1px;
+        width: 100%;
     }
-
-    .screenshot-3x {
-        margin: 5px;
-        padding: 5px;
-        height: auto;
-        width: 31%;
-        display: inline-block;
-    }
-
-    .screenshot-2x {
-        margin: 5px;
-        padding: 5px;
-        height: auto;
-        width: 47%;
-        display: inline-block;
-    }
-
 }
